@@ -7,6 +7,8 @@ def get_numbers_ticket(min, max, quantity):
     else:
         while len(win_sequences) < quantity:
             win_sequences.append(random.randrange(min, max))
-            win_sequences = set(win_sequences)
+            win_sequences = sorted(set(win_sequences))
             win_sequences = list(win_sequences)
     return win_sequences 
+
+
