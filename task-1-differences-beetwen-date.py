@@ -11,4 +11,3 @@ def  get_days_from_today(date):
     except ValueError:
         print("Incorrect date")
         
-print(get_days_from_today("2023-03-15"))
