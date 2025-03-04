@@ -2,7 +2,7 @@ import re
 
 def normalize_phone(phone_number):
     correct_phone_number = ""
-    if re.search(r"380", phone_number):
+    if re.search(r"380|38\(0|38 0", phone_number):
         correct_phone_number = '+'
         correct_phone_number += str((re.sub(r"(\D)", '', phone_number)))
    
